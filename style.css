@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #263244;
+    line-height: 1.6;
+}
+
+header {
+    background: #17263b;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header h2 span {
+    color: #55c7a5;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #55c7a5;
+}
+
+#menuBtn {
+    display: none;
+    background: none;
+    color: white;
+    border: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.tanitim {
+    background: #e4f3ee;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.tanitim h1 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.tanitim p {
+    max-width: 580px;
+    margin: 12px auto 22px;
+}
+
+.etiket {
+    color: #27866e;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.buton {
+    display: inline-block;
+    background: #27866e;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buton:hover {
+    background: #1e6d59;
+}
+
+section:not(.tanitim) {
+    max-width: 1000px;
+    margin: auto;
+    padding: 42px 25px;
+}
+
+section h2 {
+    color: #27866e;
+    margin-top: 0;
+}
+
+.etiketler {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.etiketler span {
+    background: #e1eee9;
+    color: #246b59;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.kartlar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+article {
+    background: white;
+    border: 1px solid #e3e8ee;
+    border-radius: 7px;
+    padding: 18px;
+    flex: 1 1 230px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    color: #667386;
+    font-size: 14px;
+}
+
+#iletisim a {
+    color: #27866e;
+}
+
+footer {
+    background: #17263b;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    nav.acik {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .tanitim h1 {
+        font-size: 29px;
+    }
+}
